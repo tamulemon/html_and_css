@@ -1,0 +1,264 @@
+________________index
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = 'utf-8'>
+    <title>Meng Chen | Web Designer</title>
+    <link rel = 'stylesheet' href = 'css/normalize.css'>
+    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link rel = 'stylesheet' href = 'css/mycss.css'>
+  </head>
+  <body>
+    <header>
+      <a href = 'index.html' id = 'logo'>
+        <h1>Meng Chen</h1>
+        <h2>Programmer</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href = 'index.html' class = 'selected'>Portforlio</a></li>
+          <li><a href = 'about.html'>About</a></li>
+          <li><a href = 'contact'>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id = 'wrapper'>
+      <section>
+          <ul id = 'gallery'>
+            <li>
+              <a href='Img/numbers-01.jpg'>
+                <img src='Img/numbers-01.jpg' alt=''>
+                <p>Test</p>
+               </a>
+            </li>
+            <li>
+              <a href='Img/numbers-02.jpg'>
+                <img src='Img/numbers-02.jpg' alt=''>
+                <p>Test</p>
+               </a>
+            </li>
+            <li>
+              <a href='Img/numbers-06.jpg'>
+                <img src='Img/numbers-06.jpg' alt=''>
+                <p>Test</p>
+               </a>
+            </li>
+            <li>
+              <a href='Img/numbers-09.jpg'>
+                <img src='Img/numbers-09.jpg' alt=''>
+                <p>Test</p>
+               </a>
+            </li>
+            <li>
+              <a href='Img/numbers-12.jpg'>
+                <img src='Img/numbers-12.jpg' alt=''>
+                <p>Test</p>
+               </a>
+            </li>
+          </ul>
+      </section>
+      <footer>
+        <img src='Img/twitter-wrap.png' alt='Twitter logo' class = 'social-icon'>
+        <a href = 'https://www.facebook.com/lemon.chen.391'>
+          <img src='Img/facebook-wrap.png' alt='Facebook logo' class = 'social-icon'>
+        </a>
+        <p>&copy; 2015 Meng Chen. </p>
+      </footer>
+    </div>
+  </body>  
+</html>
+ 
+_______________________about
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = 'utf-8'>
+    <title>Meng Chen | Web Designer</title>
+    <link rel = 'stylesheet' href = 'css/normalize.css'>
+    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link rel = 'stylesheet' href = 'css/mycss.css'>
+  </head>
+  
+  <body>
+    <header>
+      <a href = 'index.html'>
+        <h1>Meng Chen</h1>
+        <h2>Programmer</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href = 'index.html'>Portforlio</a></li>
+          <li><a href = 'about.html' class = 'selected'>About</a></li>
+          <li><a href = 'contact.html'>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <ul id = 'gallery'>
+        <li><img src = 'Img/Profile pic 2.JPG' alt = 'photo' class = 'photo'></li>
+        <li><img src = 'Img/Profile pic 3.JPG'alt = 'photo' class = 'photo'></li>
+        <li><img src = 'Img/Profile pic 4.JPG' alt = 'photo' class = 'photo'></li>
+      </ul>
+      <h3> About Meng Chen</h3>
+      <p>Test Follow me on <a href = 'https://www.facebook.com/lemon.chen.391'>Facebook</a>.</p>
+    </section>
+    <footer>
+      <img src = 'Img/twitter-wrap.png' alt ='Twitter logo' class = 'social-icon'>
+      <a href = 'https://www.facebook.com/lemon.chen.391'><img src = 'Img/facebook-wrap.png' alt ='Facebook logo'  class = 'social-icon'></a>
+      <p>&copy; 2015 Meng Chen. </p>
+    </footer>
+  </body>  
+</html>
+ 
+
+____________________________________mycss
+/**********************************
+General
+***********************************/
+
+a{
+  text-decoration: none; /*remove all underline of the links*/
+  color: #111;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  color: #999;
+  /*text-align: center;*/
+}
+
+#wrapper {
+  max-width: 940px; /* could use width, but max-width comes handy for other browser setup like moble devices*/
+  margin: 0 auto; /*first is up/down margin, second is left/right*/
+  padding: 0 5%;/* top/bottom, left/right*/
+}
+
+
+img {
+  max-width: 100%; /* same size as the cnotainer*/
+}
+
+
+
+/**********************************
+Header
+***********************************/
+/*#logo {
+  text-align: center;
+  margin: 0;
+}*/
+
+header{
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  background: #6ab47b;
+  border-color: #599a68;
+}
+
+/*select 2 elements*/
+h1, h2{
+  text-align: center;
+  color: #fff; /*same as ffffff*/
+}
+
+h1 {
+  font-family: 'Changa One', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8 em;
+}
+
+h2{
+  font-size: 0.75em;
+  font-weight: normal;
+  margin: -5px 0 0; /*top,left/right, bottom-- more tight together*/
+}
+
+
+/**********************************
+Header Navigation
+***********************************/
+nav {
+  background-color: #599a68;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;  
+}
+
+nav a, nav a:visited {
+ color: #fff; 
+}
+
+/* rule for a class and a pseudo-class*/
+nav a.selected, nav a:hover{
+  color: #32673f;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li { /* same as select nav ul li in this case*/
+  margin: 0 10px;
+  display:inline-block; /* will appear horizontally*/
+}
+/**********************************
+Footer
+***********************************/
+footer {
+  font-size: 0.75em;
+  text-align: center; /*if resize browser window, will shrink accordinly*/
+  clear: both; /* clear on left and right floating*/
+  padding-top: 50px;  
+  color: #ccc;
+}
+
+.social-icon { /*same as footer img.social-icon, so class need to be uniquely named for each page*/
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+/**********************************
+Page gallery
+***********************************/
+
+#gallery{
+  margin: 0;
+  padding: 0;
+  list-style: none; /* remove the bullet points*/
+}
+
+#gallery li{
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+}
+
+#gallery li a p{
+  margin: 0;
+  padding: 5%;
+  font-size: .75em;
+  color: #bdc9cf
+}
+
+
+
+/**********************************
+Page About
+***********************************/
+.photo{
+  display: block; /*allow to use auto margin to center images*/
+  max-width: 200px;
+  margin: 0 auto 30px;
+  border-radius:100%; /*add rounded edges. 100% to make obligon or circle. an absolute value like 20px, will just give slight rounded edges*/
+}
+
